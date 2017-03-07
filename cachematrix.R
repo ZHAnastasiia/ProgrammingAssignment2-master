@@ -20,6 +20,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 ## cacheSolve works together with makeCacheMatrix to populate or retrieve an
 ## inverse from the matrix of type makeCacheMatrix()
+         # if the value exists already, it retrieves the inverse, if not - it calculates one and caches it in.
 
 cacheSolve <- function(x, ...) {
        m <- x$getinverse()
